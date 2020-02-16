@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap');
+html,
+body {
+  font-family: 'Overpass Mono', monospace;
+  background: #464159;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* background-color: #000; */
+}
+
+.css-typing p {
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #c7f0db;
+}
+.css-typing p:nth-child(1) {
+  width: 2em;
+  -webkit-animation: typing 2s steps(6, end), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(6, end), blink .5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 4em;
+  opacity: 0;
+  -webkit-animation: typing 3s steps(16, end), blink .5s step-end infinite alternate;
+  animation: typing 3s steps(16, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  border-right: .15em solid#6c7b95;
+  width: 18.5em;
+  opacity: 0;
+  -webkit-animation: typing-last 3s steps(58, end), blink .5s step-end infinite alternate;
+  animation: typing-last 3s steps(58, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing-last {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes typing-last {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
